@@ -42,8 +42,32 @@ The goal was to avoid simple word counting and instead focus on meaningful job-r
 7. The agent lists matched and missing requirements
 8. The agent suggests truthful improvements
 
-## How to Run
-Make sure Ollama is installed and running.
+---
 
+## Setup Instructions
+
+### 1. Install Ollama
+Download from:
+https://ollama.com
+
+---
+
+### 2. Start Ollama server
 ```bash
 ollama serve
+```
+
+### 3. Pull model
+```bash
+ollama pull llama3.2:1b
+```
+
+### 4. Install Python dependency
+```bash
+pip install ollama
+```
+
+### 5. Run the project
+```bash
+python3 day6_resume_optimizer.py
+```
